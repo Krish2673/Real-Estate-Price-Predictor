@@ -1,10 +1,33 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+import App from './App.jsx';
+import Home from './components/Home.jsx';
+import Visualizations from './components/Visualizations.jsx';
+import MapView from './components/MapView.jsx';
+import DatasetExplorer from './components/DatasetExplorer.jsx';
+import About from './components/About.jsx';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'visualizations', element: <Visualizations /> },
+      { path: 'map', element: <MapView /> },
+      { path: 'explorer', element: <DatasetExplorer /> },
+      { path: 'about', element: <About /> },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
