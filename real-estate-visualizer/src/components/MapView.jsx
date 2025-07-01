@@ -187,14 +187,15 @@ function MapView() {
           <MapEvents setMapBounds={setMapBounds} />
 
           <TileLayer
-            attribution='&copy; OpenStreetMap contributors'
+            attribution='Tiles © Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye'
             url={
               mapType === "satellite"
-                ? "https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
+                ? "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
                 : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             }
-            subdomains={mapType === "satellite" ? ['mt0', 'mt1', 'mt2', 'mt3'] : undefined}
           />
+
+
 
           <MarkerClusterGroup chunkedLoading>
             {filteredProperties
