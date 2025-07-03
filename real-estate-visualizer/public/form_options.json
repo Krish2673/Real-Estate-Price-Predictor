@@ -1,0 +1,41 @@
+{
+  "cities": ["Ahmedabad", "Bangalore", "Chennai", "Delhi", "Hyderabad", "Kolkata", "Lucknow", "Mumbai"],
+  "types": ["Apartment", "Independent House", "Villa", "Studio", "Penthouse"],
+  "builders": ["Prestige Group", "DLF", "Sobha", "Lodha", "Brigade Group", "Godrej Properties", "Hiranandani", "Omaxe", "Shapoorji Pallonji", "Puravankara"],
+  "furnishings": ["Unfurnished", "Semifurnished", "Furnished"],
+  "statuses": ["Ready to move", "Under Construction"],
+  "suburbs_by_city": {
+    "Ahmedabad": [
+      "Ahmedabad West", "Ahmedabad South", "Ahmedabad North", "Ahmedabad East", "SG Highway", "Ahmedabad Central", "Sanand1", "Khokhra Circle"
+    ],
+    "Bangalore": [
+      "Sarjapur Road Before Wipro", "Bannerghatta Road", "Whitefield", "Bangalore North", "Bangalore West", "Mysore Road", "Hosur Road",
+      "Old Madras Road", "Bangalore South", "Bangalore East", "Sarjapur Road", "Hennur Main Road", "Old Airport Road", "Bangalore Central",
+      "Outer Ring Road", "Kanakapura Road", "Thanisandra Main Road", "New Airport Road"
+    ],
+    "Chennai": [
+      "ECR", "Chennai West", "GST", "OMR", "Chennai North", "Chennai South", "Vandalur Kelambakkam Road", "Chennai Central", "Vandalur Road",
+      "Arcot Road  Saligramam", "Tharamani", "Chennai Bypass Road", "OMR Bypass Road", "Kodungaiyur East"
+    ],
+    "Delhi": [
+      "Delhi South", "North Delhi", "Delhi East", "West Delhi", "Rohini", "Dwarka", "Delhi Central", "Near Bahadurgarh Metro Station",
+      "Delhi North", "South West Delhi", "Delhi West", "North East Delhi", "North West Delhi", "Near Fun And Food Village", "New Delhi"
+    ],
+    "Hyderabad": [
+      "Hyderabad West", "Hyderabad East", "Hyderabad South", "Secunderabad", "Hyderabad North", "ORR North", "ORR West", "ORR South",
+      "Hyderabad Central", "Gr Hyderabad", "South Hyderabad", "NH 7"
+    ],
+    "Kolkata": [
+      "Kolkata West", "Kolkata East", "Kolkata North", "Kolkata South", "EM Bypass", "Kolkata Central", "Diamond Harbour Road Thakurpukur",
+      "Hooghly East"
+    ],
+    "Lucknow": [
+      "Rae Bareli Road", "Lucknow South", "Lucknow East", "Lucknow North", "Lucknow Central", "Sitapur National Hwy", "Kanpur Road",
+      "Alambagh", "Barabanki", "Lucknow West", "Gomti Nagar", "Kanpur Lucknow Road"
+    ],
+    "Mumbai": [
+      "Andheri to Dahisar", "Thane", "Beyond Thane", "Navi Mumbai", "Mira Road and Beyond", "Mumbai Harbour", "Central Mumbai",
+      "Beyond Panvel", "Worli to Andheri", "Mumbai South", "Mumbai Mira Road and Beyond", "Mumbai Central Line", "Mumbai Beyond Thane"
+    ]
+  }
+}
